@@ -2,7 +2,7 @@
 
 ***
 
-[網頁展示](https://quantumparrot.github.io/2023-Agricultural-Products-Price-Sample/)
+[網頁展示](https://quantumparrot.github.io/2023-Agricultural-Products-Price-Comparison/)
 
 ***
 
