@@ -1,0 +1,227 @@
+/*
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+*/
+
+@import "config/_variables";
+
+@font-face {
+  font-family: "Iansui-Regular";
+  src: url("../font/Iansui-Regular.ttf");
+}
+
+// * { outline: 1px solid black }
+
+body {
+  font-family: 'Iansui-Regular', sans-serif;
+  color: $black;
+  background-image: url('https://hexschool.github.io/js-filter/assets/bg.jpg');
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* background */
+
+.bg-green {
+  background-color: $green;
+  color: white;
+}
+
+/* shadow */
+
+.shadow-yellow {
+  box-shadow: 0 0 0 3px $yellow, 0 0 0 8px #FFFCEF, 0 2px 20px 0 rgba(0,0,0,0.15);;
+}
+
+/* flex */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* padding */
+
+.p-6 {
+  padding: 5rem;
+}
+
+/* button */
+
+.btn-filter {
+  background: #FFFFFF;
+  padding:  8px 40px;
+  border: 2px solid $black;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 $black;
+  &:hover {
+    background-color: $yellow;
+  }
+}
+
+@media (max-width: 475px) {
+  .btn-filter {
+    padding: 8px 36px;
+  }
+}
+
+@media (max-width: 387px) {
+  .btn-filter {
+    padding: 8px 24px;
+  }
+}
+
+.btn-search {
+  background: $green;
+  color: white;
+  border: 2px solid $green;
+  border-radius: 4px;
+  &:hover {
+    background: darken($green, 10%);
+  }
+}
+
+@media (max-width: 991px) {
+  .btn-search {
+    width: 100%;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .search-bar {
+    
+//   }
+// }
+
+.btn-sort {
+  border: 1px solid $gray;
+  border-radius: 4px;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid $black;
+  }
+}
+
+/* border */
+
+.border-green {
+  border-color: $green;
+}
+
+/* table */
+
+.table-beige {
+  --bs-table-color: #000;
+  --bs-table-bg: #F4F1EA;
+  --bs-table-border-color:  #000;
+  --bs-table-striped-bg: #c7dbd2;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #bcd0c7;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #c1d6cc;
+  --bs-table-hover-color: #000;
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
