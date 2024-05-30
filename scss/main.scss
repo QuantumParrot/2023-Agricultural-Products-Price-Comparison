@@ -1,0 +1,71 @@
+@import "helpers/variables";
+@import "buttons";
+
+@font-face {
+
+  font-family: "Iansui-Regular";
+  src: url("../assets/font/Iansui-Regular.ttf");
+  font-display: swap;
+
+}
+
+// * { outline: 1px solid black }
+
+body {
+
+  font-family: 'Iansui-Regular', sans-serif;
+  color: $black;
+  background-image: url('https://hexschool.github.io/js-filter/assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+img {
+
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+
+}
+
+.bg-green {
+
+  background-color: $green;
+  color: white;
+
+}
+
+.shadow-yellow {
+
+  box-shadow: 0 0 0 3px $yellow, 0 0 0 8px #FFFCEF, 0 2px 20px 0 rgba(0,0,0,0.15);;
+
+}
+
+.flex-center {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.p-6 { padding: 5rem; }
+
+.border-green { border-color: $green; }
+
+.table-beige {
+
+  --bs-table-color: #000;
+  --bs-table-bg: #F4F1EA;
+  --bs-table-border-color:  #000;
+  --bs-table-striped-bg: #c7dbd2;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #bcd0c7;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #c1d6cc;
+  --bs-table-hover-color: #000;
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+
+}

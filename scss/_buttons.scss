@@ -1,0 +1,49 @@
+.btn-filter {
+
+  background: #FFFFFF;
+  padding:  8px 40px;
+  border: 2px solid $black;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 $black;
+
+  &:hover { background-color: $yellow; }
+
+}
+
+@media (max-width: 475px) {
+
+  .btn-filter { padding: 8px 36px; }
+
+}
+
+@media (max-width: 387px) {
+
+  .btn-filter { padding: 8px 24px; }
+
+}
+
+.btn-search {
+
+  background: $green;
+  color: white;
+  border: 2px solid $green;
+  border-radius: 4px;
+
+  &:hover { background: darken($green, 10%); }
+
+}
+
+@media (max-width: 991px) {
+  
+  .btn-search { width: 100%; }
+
+}
+
+.btn-sort {
+
+  border: 1px solid $gray;
+  border-radius: 4px;
+
+  &:hover { border: 1px solid $black; }
+
+}
